@@ -153,8 +153,8 @@ body {
 .main-button-gradient a {
   font-size: 13px;
   color: #fff;
-  background: linear-gradient(to left, rgb(0, 0, 166), white);
-  background: rgb(0, 0, 166);
+  background: linear-gradient(to left, rgb(62, 62, 240), white);
+  background:rgb(62, 62, 240);
   /* background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%); */
   padding: 12px 30px;
   display: inline-block;
@@ -233,7 +233,7 @@ section {
 
 .section-heading h4 em {
   font-style: normal;
-  color: rgb(0, 0, 166);
+  color: rgb(62, 62, 240);
 }
 
 .section-heading p {
@@ -259,7 +259,7 @@ header
 
 .header-area {
   /* background-image: url(../images/header-bg.png); */
-  background: linear-gradient(to left, rgb(0, 0, 166), white);
+  background: linear-gradient(to left, rgb(62, 62, 240), white);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -736,7 +736,7 @@ section.main-banner {
 
 .main-banner .header-text h2 em {
   font-style: normal;
-  color:  rgb(0, 0, 166)
+  color:  rgb(62, 62, 240);
 }
 
 .main-banner .main-button-gradient {
@@ -1136,8 +1136,8 @@ section.contact-us .contact-info .icon i {
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(62, 62, 240);
+  /* background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%); */
   color: #fff;
 }
 
@@ -1149,7 +1149,7 @@ section.contact-us .contact-info h4 {
 
 section.contact-us .contact-info span {
   font-size: 15px;
-  color: #dc8cdb;
+  color: rgb(56, 56, 56);
   font-weight: 700;
 }
 
@@ -1203,9 +1203,9 @@ section.contact-us #contact textarea {
 section.contact-us #contact button {
   float: right;
   font-size: 13px;
-  color: #fff;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  color: white;
+  background: rgb(62, 62, 240);
+  /* background:linear-gradient(to left, rgb(0, 0, 166), white);; */
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -1238,13 +1238,13 @@ section.contact-us ul.social-icons li a {
   text-align: center;
   line-height: 44px;
   background-color: #fff;
-  color: #dc8cdb;
+  color: rgb(62, 62, 240);
   border-radius: 50%;
   transition: all .5s;
 }
 
 section.contact-us ul.social-icons li a:hover {
-  background-color: #dc8cdb;
+  background-color: rgb(62, 62, 240);
   color: #fff;
 }
 
