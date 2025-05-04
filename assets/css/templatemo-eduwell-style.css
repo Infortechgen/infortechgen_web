@@ -259,7 +259,7 @@ header
 
 .header-area {
   /* background-image: url(../images/header-bg.png); */
-  background: linear-gradient(to left, rgb(62, 62, 240), white);
+  background: linear-gradient(to left, white, white);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -331,7 +331,7 @@ header
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
-  color: #fff;
+  color: black;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -344,13 +344,15 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fff!important;
+  color: black!important;
+  font-weight: bold;
+  font-size: 40;
   opacity: 0.75;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fff!important;
+  color: black!important;
   opacity: 1;
 }
 
@@ -363,7 +365,7 @@ header
   font-family: FontAwesome;
   content: "\f107";
   font-size: 12px;
-  color: #fff;
+  color: black!important;
   position: absolute;
   right: 5px;
   top: 12px;
@@ -392,7 +394,7 @@ header
 .header-area .main-nav .nav li.has-sub ul.sub-menu li a {
   opacity: 1;
   display: block;
-  background: #f7f7f7;
+  background: #90c0f1;
   color: #2a2a2a!important;
   padding-left: 20px;
   height: 40px;
@@ -404,12 +406,12 @@ header
   position: relative;
   font-size: 12px;
   font-weight: 400;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #fffefe;
 }
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
   background: #fff;
-  color: #dc8cdb!important;
+  color: #0004ff!important;
   padding-left: 25px;
 }
 
@@ -449,7 +451,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: blue;
   display: block;
   position: absolute;
   width: 30px;
@@ -460,7 +462,7 @@ header
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #fff;
+  background-color: blue;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -469,7 +471,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: blue;
   display: block;
   position: absolute;
   width: 30px;
@@ -480,7 +482,7 @@ header
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #fff;
+  background-color: blue;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -521,7 +523,7 @@ header
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #fff;
+  background-color: red;
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
@@ -533,11 +535,11 @@ header
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #fff;
+  background-color: red;
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #fff;
+  background-color: red;
 }
 
 .header-area.header-sticky {
@@ -568,7 +570,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #dc8cdb!important;
+    color: blue!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -621,12 +623,12 @@ header
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: #f7f7f7 !important;
+    background: #f2eeee !important;
     color: #191a20 !important;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #eee !important;
-    color: #dc8cdb!important;
+    background: #65b7fa !important;
+    color: blue!important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
@@ -1759,7 +1761,7 @@ body {
   }
   .header-area {
     /* background: rgb(219,138,222) !important; */
-    background:linear-gradient(to left, rgb(0, 0, 166), white);;
+    background:linear-gradient(to left, white, white);;
   }
   .services .owl-nav .owl-next{
     right: -70px;
