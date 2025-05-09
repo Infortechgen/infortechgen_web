@@ -165,8 +165,8 @@ body {
 }
 
 .main-button-gradient a:hover {
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background:rgb(62, 62, 240);
+  background: linear-gradient(-145deg, rgb(138, 172, 222) 0%, rgba(246,191,159,1) 100%);
   opacity: 0.9;
 }
 
@@ -564,9 +564,10 @@ header
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-area .main-nav .logo {
     color: #1e1e1e;
+    max-width: 90px;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
@@ -1705,7 +1706,7 @@ section.more-info .count-area-content .count-digit {
   height: 80px;
   line-height: 80px;
   font-size: 28px;
-  color: #dc8cdb;
+  color: rgb(28, 28, 247);
   font-weight: 900;
   margin-bottom: -40px;
   position: relative;
@@ -1911,5 +1912,10 @@ body {
   }
   section.more-info .count-area-content .count-title {
     font-size: 22px;
+  } 
+  .responsive-logo{
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
