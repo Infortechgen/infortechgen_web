@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Hoombar",
+    "description": "Cloud Infrastructure Company",
+    "imageKey": "hoombar"
+  },
+  {
+    "id": 2,
+    "name": "InforFurniture",
+    "description": "Furniture shop website",
+    "imageKey": "inforfurniture"
+  }
+]

@@ -229,3 +229,18 @@ button:hover ~ .custom-cursor {
     display: none;
   }
 }
+
+
+/* ================= GLOBAL SCROLL REVEAL ================= */
+
+.page-wrapper {
+  min-height: 100vh;
+  background: #f5f9ff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}

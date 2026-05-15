@@ -1,0 +1,216 @@
+/* ================= GLOBAL ================= */
+
+.services-page {
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  background: #f6f9ff;
+  overflow-x: hidden;
+}
+
+/* ================= BANNER ================= */
+
+.services-banner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.banner-content {
+  flex: 1;
+}
+
+.banner-content h1 {
+  font-size: clamp(38px, 5vw, 64px);
+  font-family: "Outfit";
+  font-weight: 800;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-content p {
+  color: #64748b;
+  line-height: 1.8;
+  margin: 20px 0;
+  max-width: 600px;
+}
+
+.banner-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.banner-btn:hover {
+  transform: translateY(-5px);
+}
+
+.banner-image img {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+  transform: perspective(1000px) rotateY(-8deg);
+  transition: 0.5s;
+}
+
+.banner-image img:hover {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+/* ================= INTRO ================= */
+
+.services-intro {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.services-intro h2 {
+  font-size: 42px;
+  font-family: "Outfit";
+}
+
+.services-intro p {
+  max-width: 700px;
+  margin: 15px auto;
+  color: #64748b;
+  line-height: 1.8;
+}
+
+/* ================= GRID ================= */
+
+.services-grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* ================= SERVICE CARD ================= */
+
+.service-card {
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+  transition: 0.4s;
+  transform-style: preserve-3d;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) rotateX(6deg);
+}
+
+/* image */
+
+.service-img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* content */
+
+.service-content {
+  padding: 25px;
+}
+
+.service-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-family: "Outfit";
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* link */
+
+.service-link {
+  margin-top: 15px;
+  color: #2563eb;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ================= CTA ================= */
+
+.services-cta {
+  padding: 80px 20px 120px;
+}
+
+.cta-box {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+.cta-box h2 {
+  font-size: 40px;
+  font-family: "Outfit";
+}
+
+.cta-box p {
+  color: #cbd5e1;
+  margin: 20px 0;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .services-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-image img {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-img img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-intro h2 {
+    font-size: 30px;
+  }
+}

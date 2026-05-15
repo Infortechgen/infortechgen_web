@@ -5,13 +5,13 @@ import { useEffect } from "react";
 
 import Header from "./Header";
 import Footer from "./footer";
-
 import "../css/Layout.css";
-
+// import useReveal from "../hooks/useReveal";
+import initGSAPAnimations from "../animations/gsapScroll";
 export default function MainLayout() {
-
+  // useReveal();
   useEffect(() => {
-
+    initGSAPAnimations();
     const cursor = document.querySelector(".custom-cursor");
 
     const moveCursor = (e) => {
@@ -24,12 +24,10 @@ export default function MainLayout() {
     return () => {
       window.removeEventListener("mousemove", moveCursor);
     };
-
   }, []);
 
   return (
     <div className="page-wrapper">
-
       {/* Animated Background Bubbles */}
       <div className="bubbles">
         <span></span>
@@ -54,7 +52,6 @@ export default function MainLayout() {
       </main>
 
       <Footer />
-
     </div>
   );
 }

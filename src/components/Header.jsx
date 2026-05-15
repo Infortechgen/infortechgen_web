@@ -27,11 +27,11 @@ export default function Header() {
       {/* Navigation */}
       <nav className={`nav ${menuOpen ? "active" : ""}`}>
         <Link to="/" onClick={closeMenu}>Home</Link>
-        <Link to="/about" onClick={closeMenu}>About</Link>
-        <Link to="/contact" onClick={closeMenu}>Our services</Link>
-        <Link to="/contact" onClick={closeMenu}>Our products</Link>
+        <Link to="/Aboutus" onClick={closeMenu}>About</Link>
+        <Link to="/Services" onClick={closeMenu}>Our services</Link>
+        <Link to="/ProductsPage" onClick={closeMenu}>Our products</Link>
 
-        <Link to="/contact" className="contact-btn" onClick={closeMenu}>
+        <Link to="/ContactUs" className="contact-btn" onClick={closeMenu}>
           Contact Us
         </Link>
       </nav>

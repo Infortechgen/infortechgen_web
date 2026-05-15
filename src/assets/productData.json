@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Lead me",
+    "headline": "All Your Leads. One App.",
+    "description": "Manage the entire lead lifecycle...",
+    "logo": "leadme"
+  },
+  {
+    "id": 2,
+    "name": "InfoCloud",
+    "headline": "Upload Smart, Stay Secure",
+    "description": "Document management system...",
+    "logo": "infocloud"
+  }
+]

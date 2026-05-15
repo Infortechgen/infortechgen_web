@@ -2,7 +2,9 @@
 
 import { Link } from "react-router-dom";
 import "../homepage/Home.css";
-
+import clients from "../../assets/clientsData.json";
+import hoombarlogo from "../../assets/hoombar_logo.webp";
+import inforFurnitureicon from "../../assets/inforfurnitureLogo.png";
 export default function HomePage() {
   const stats = [
     { num: "50+", label: "Projects Completed" },
@@ -43,28 +45,18 @@ export default function HomePage() {
       desc: "Protect your digital assets with advanced security solutions.",
     },
   ];
-
-  const clients = [
-    "TechNova",
-    "BluePeak",
-    "SoftLink",
-    "CodeWorks",
-    "NextGen Labs",
-    "InnovaCorp",
-  ];
-
+  /* company logos maping */
+  const logoMap = {
+    hoombar: hoombarlogo,
+    inforfurniture: inforFurnitureicon,
+  };
   return (
     <div className="itg-home">
-
       {/* ================= HERO ================= */}
 
       <section className="hero">
-
         <div className="hero-content">
-
-          <div className="hero-badge">
-            #1 Software Company in Sri Lanka
-          </div>
+          <div className="hero-badge">#1 Software Company in Sri Lanka</div>
 
           <h1>
             Transform Your Business With
@@ -90,7 +82,6 @@ export default function HomePage() {
           {/* floating cards */}
 
           <div className="hero-mini-cards">
-
             <div className="mini-card">
               <h4>100%</h4>
               <p>Responsive Design</p>
@@ -105,167 +96,127 @@ export default function HomePage() {
               <h4>AI</h4>
               <p>Smart Technology</p>
             </div>
-
           </div>
-
         </div>
 
         <div className="hero-image">
-
           <div className="image-glow"></div>
 
           <img
             src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
             alt="Software Development Company"
           />
-
         </div>
-
       </section>
 
       {/* ================= STATS ================= */}
 
       <section className="stats-bar">
-
         {stats.map((item, index) => (
           <div className="stat-item" key={index}>
             <h2>{item.num}</h2>
             <p>{item.label}</p>
           </div>
         ))}
-
       </section>
 
       {/* ================= SERVICES ================= */}
 
       <section className="services-section">
-
         <div className="section-heading">
-
           <span>OUR SERVICES</span>
 
-          <h2>
-            Innovative IT Solutions For Modern Businesses
-          </h2>
+          <h2>Innovative IT Solutions For Modern Businesses</h2>
 
           <p>
             We provide complete software and digital transformation services
             designed to help businesses scale faster.
           </p>
-
         </div>
 
         <div className="services-grid">
-
           {services.map((service, index) => (
             <div className="service-card" key={index}>
-
-              <div className="service-icon">
-                {service.icon}
-              </div>
+              <div className="service-icon">{service.icon}</div>
 
               <h3>{service.title}</h3>
 
               <p>{service.desc}</p>
 
-              <div className="service-arrow">
-                →
-              </div>
-
+              <div className="service-arrow">→</div>
             </div>
           ))}
-
         </div>
-
       </section>
 
       {/* ================= ABOUT ================= */}
 
       <section className="about-section">
-
         <div className="about-image">
-
           <img
             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
             alt="IT Company Team"
           />
-
         </div>
 
         <div className="about-content">
-
           <span>ABOUT INFORTECHGEN</span>
 
-          <h2>
-            We Build Future Ready
-            Digital Experiences
-          </h2>
+          <h2>We Build Future Ready Digital Experiences</h2>
 
           <p>
             Infortechgen is a modern IT company focused on delivering
-            high-quality digital products for startups, businesses,
-            and enterprises worldwide.
+            high-quality digital products for startups, businesses, and
+            enterprises worldwide.
           </p>
 
           <div className="about-features">
+            <div className="feature-box">✔ Modern Technologies</div>
 
-            <div className="feature-box">
-              ✔ Modern Technologies
-            </div>
+            <div className="feature-box">✔ Scalable Architecture</div>
 
-            <div className="feature-box">
-              ✔ Scalable Architecture
-            </div>
+            <div className="feature-box">✔ User Friendly Design</div>
 
-            <div className="feature-box">
-              ✔ User Friendly Design
-            </div>
-
-            <div className="feature-box">
-              ✔ 24/7 Technical Support
-            </div>
-
+            <div className="feature-box">✔ 24/7 Technical Support</div>
           </div>
-
         </div>
-
       </section>
 
       {/* ================= CLIENTS ================= */}
-
       <section className="clients-section">
-
         <div className="section-heading">
-
           <span>TRUSTED CLIENTS</span>
 
-          <h2>
-            Companies That Trust Us
-          </h2>
+          <h2>Companies That Trust Us</h2>
 
+          <p>
+            We proudly collaborate with innovative startups, enterprises, and
+            technology companies worldwide.
+          </p>
         </div>
 
-        <div className="clients-grid">
+        {/* AUTO SCROLL CLIENTS */}
 
-          {clients.map((client, index) => (
-            <div className="client-card" key={index}>
-              {client}
-            </div>
-          ))}
-
+        <div className="clients-slider">
+          <div className="clients-track">
+            {[...clients, ...clients].map((client, index) => (
+              <div className="client-card" key={index}>
+                <img
+                  src={logoMap[client.imageKey]}
+                  alt={client.name}
+                  className="client-logo"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-
       </section>
 
       {/* ================= CTA ================= */}
 
       <section className="cta-section">
-
         <div className="cta-box">
-
-          <h2>
-            Ready To Build Your Next Big Project?
-          </h2>
+          <h2>Ready To Build Your Next Big Project?</h2>
 
           <p>
             Let's create something innovative together with modern technology.
@@ -274,11 +225,8 @@ export default function HomePage() {
           <Link to="/contact" className="cta-btn">
             Get Free Consultation
           </Link>
-
         </div>
-
       </section>
-
     </div>
   );
 }
