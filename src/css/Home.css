@@ -35,9 +35,9 @@ a{
 /* ================= HERO ================= */
 
 .hero{
-  max-width:1300px;
+  max-width:1200px;
   margin:auto;
-  padding:120px 24px 100px;
+  padding:20px 24px 100px;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -52,10 +52,10 @@ a{
   display:inline-block;
   padding:8px 18px;
   border-radius:100px;
-  background:#dbeafe;
-  color:#2563eb;
+  background:#4d9aff83;
+  color:#002E6B;
   font-weight:700;
-  font-size:13px;
+  font-size:14px;
   margin-bottom:25px;
 }
 
@@ -65,16 +65,17 @@ a{
   line-height:1.1;
   margin-bottom:25px;
   font-weight:800;
+  color: #2d2d2d;
 }
 
 .hero h1 span{
-  background:linear-gradient(135deg,#2563eb,#7c3aed);
+  background:linear-gradient(135deg,#002E6B,#5b92d4cb);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
 
 .hero p{
-  color:#64748b;
+  color:#2d2d2d;
   font-size:17px;
   line-height:1.8;
   margin-bottom:35px;
@@ -91,7 +92,7 @@ a{
 /* buttons */
 
 .btn-primary{
-  background:linear-gradient(135deg,#2563eb,#7c3aed);
+  background:linear-gradient(135deg,#002E6B,#2d2d2d);
   color:white;
   padding:16px 34px;
   border-radius:14px;
@@ -171,11 +172,12 @@ a{
 .mini-card h4{
   font-size:22px;
   margin-bottom:5px;
-  color:#2563eb;
+  color:#002E6B;
 }
 
 .mini-card p{
   margin:0;
+  color: #2d2d2d;
   font-size:13px;
 }
 
@@ -191,7 +193,7 @@ a{
 }
 
 .stat-item{
-  background:white;
+  background:#BBD5DA;
   padding:35px 20px;
   border-radius:24px;
   text-align:center;
@@ -207,11 +209,12 @@ a{
   font-size:42px;
   margin-bottom:10px;
   font-family:'Outfit';
-  color:#2563eb;
+  color:#002E6B;
 }
 
 .stat-item p{
-  color:#64748b;
+  color:#2d2d2d;
+  font-size: 18px;
 }
 
 /* ================= SECTION HEADING ================= */
@@ -223,7 +226,7 @@ a{
 
 .section-heading span{
   color:#2563eb;
-  font-size:13px;
+  font-size:18px;
   font-weight:700;
   letter-spacing:1px;
 }
@@ -235,7 +238,8 @@ a{
 }
 
 .section-heading p{
-  color:#64748b;
+  color:#2d2d2d;
+  font-size: 18px;
   max-width:700px;
   margin:auto;
   line-height:1.8;
@@ -244,9 +248,9 @@ a{
 /* ================= SERVICES ================= */
 
 .services-section{
-  max-width:1250px;
+  max-width:1200px;
   margin:auto;
-  padding:100px 24px;
+  padding:30px 24px;
 }
 
 .services-grid{
@@ -291,12 +295,14 @@ a{
 
 .service-card h3{
   font-size:24px;
+  color: #002470;
   margin-bottom:14px;
   font-family:'Outfit';
 }
 
 .service-card p{
-  color:#64748b;
+  color:#2d2d2d;
+  font-size: 16px;
   line-height:1.8;
 }
 
@@ -309,9 +315,9 @@ a{
 /* ================= ABOUT ================= */
 
 .about-section{
-  max-width:1250px;
+  max-width:1200px;
   margin:auto;
-  padding:100px 24px;
+  padding:10px 24px;
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:60px;
@@ -326,7 +332,7 @@ a{
 .about-content span{
   color:#2563eb;
   font-weight:700;
-  font-size:13px;
+  font-size:18px;
 }
 
 .about-content h2{
@@ -336,7 +342,8 @@ a{
 }
 
 .about-content p{
-  color:#64748b;
+  color:#2d2d2d;
+  font-size: 18px;
   line-height:1.9;
   margin-bottom:25px;
 }
@@ -348,16 +355,17 @@ a{
 }
 
 .feature-box{
-  background:white;
-  padding:16px 18px;
+  background:#BBD5DA;
+  padding:20px 20px;
+  color: #002470;
+  font-weight: bold;
   border-radius:14px;
   box-shadow:0 10px 20px rgba(0,0,0,.05);
 }
 
 /* ================= CLIENTS ================= */
-
 .clients-section{
-  padding:120px 24px;
+  padding:60px 20px;
   overflow:hidden;
   position:relative;
 }

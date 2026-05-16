@@ -12,36 +12,35 @@ export default function Footer() {
             <img src={logo} alt="Infortechgen Logo" />
           </div>
           <p>
-            Building the software that powers tomorrow. <br />
-            Headquartered in Sri Lanka, serving clients worldwide.
+            We deliver quality services with real impact. Supporting your
+            business at every step.
           </p>
         </div>
 
         {/* COMPANY */}
         <div className="footer-col">
           <h4>COMPANY</h4>
-          <a href="/">About Us</a>
-          <a href="/">Our Customers</a>
-          <a href="/">Careers</a>
-          <a href="/">Blog</a>
+          <a href="Aboutus">About Us</a>
+          <a href="Aboutus">Our services</a>
+          <a href="ProductsPage">Our products</a>
+          <a href="ContactUs"> Contact Us</a>
         </div>
 
         {/* SERVICES */}
         <div className="footer-col">
           <h4>SERVICES</h4>
-          <a href="/">Web Development</a>
-          <a href="/">Mobile Apps</a>
-          <a href="/">AI & ML</a>
-          <a href="/">Cloud & DevOps</a>
+          <a href="ContactUs">Web Development</a>
+          <a href="ContactUs">Mobile Apps</a>
+          <a href="ContactUs">AI & ML</a>
+          <a href="ContactUs">Cloud & DevOps</a>
         </div>
 
         {/* PRODUCTS */}
         <div className="footer-col">
           <h4>PRODUCTS</h4>
-          <a href="/">NexDesk</a>
-          <a href="/">FlowPay LK</a>
-          <a href="/">DataPulse</a>
-          <a href="/">HireFlow</a>
+          <a href="/">MY Leads</a>
+          <a href="/">InforCloud</a>
+          <a href="/">InforPos</a>
         </div>
       </div>
 

@@ -20,7 +20,9 @@
 .footer-brand .logo {
   color: white;
   font-size: 26px;
-  margin-bottom: 10px;
+  width: 120px;
+  height: 60px;
+  /* margin-bottom: 10px; */
 }
 
 .footer-brand p {

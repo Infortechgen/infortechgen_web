@@ -1,46 +1,57 @@
 // HomePage.jsx
 
 import { Link } from "react-router-dom";
-import "../homepage/Home.css";
+import "../../css/Home.css";
 import clients from "../../assets/clientsData.json";
 import hoombarlogo from "../../assets/hoombar_logo.webp";
 import inforFurnitureicon from "../../assets/inforfurnitureLogo.png";
+import homeMainBanner from "../../assets/home_banner.jpg";
+import homeAboutImage from "../../assets/home_about_image.jpg";
+import {
+  FaGlobe,
+  FaMobileAlt,
+  FaCloud,
+  FaPalette,
+  FaCogs,
+  FaLock,
+} from "react-icons/fa";
+
 export default function HomePage() {
   const stats = [
-    { num: "50+", label: "Projects Completed" },
-    { num: "30+", label: "Happy Clients" },
+    { num: "10+", label: "Projects Completed" },
+    { num: "10+", label: "Happy Clients" },
     { num: "5+", label: "Years Experience" },
     { num: "24/7", label: "Technical Support" },
   ];
 
   const services = [
     {
-      icon: "🌐",
+      icon: <FaGlobe />,
       title: "Web Development",
       desc: "Modern responsive websites with high performance and SEO optimization.",
     },
     {
-      icon: "📱",
+      icon: <FaMobileAlt />,
       title: "Mobile App Development",
       desc: "Beautiful Android & iOS applications with seamless user experience.",
     },
     {
-      icon: "☁️",
+      icon: <FaCloud />,
       title: "Cloud Solutions",
       desc: "Secure cloud infrastructure and scalable enterprise systems.",
     },
     {
-      icon: "🎨",
+      icon: <FaPalette />,
       title: "UI/UX Design",
       desc: "Creative interfaces designed for better engagement and conversion.",
     },
     {
-      icon: "⚙️",
+      icon: <FaCogs />,
       title: "Custom Software",
       desc: "Powerful software systems tailored for your business workflow.",
     },
     {
-      icon: "🔒",
+      icon: <FaLock />,
       title: "Cyber Security",
       desc: "Protect your digital assets with advanced security solutions.",
     },
@@ -56,7 +67,7 @@ export default function HomePage() {
 
       <section className="hero">
         <div className="hero-content">
-          <div className="hero-badge">#1 Software Company in Sri Lanka</div>
+          <div className="hero-badge">#AI-Powered Technology Solution</div>
 
           <h1>
             Transform Your Business With
@@ -64,17 +75,17 @@ export default function HomePage() {
           </h1>
 
           <p>
-            Infortechgen helps startups and enterprises build modern websites,
-            mobile applications, cloud systems, and custom software solutions
-            that drive business growth in the digital era.
+            Infortechgen is a software development company specializing in
+            modern websites, mobile applications, cloud solutions, and custom
+            business software for startups and enterprises worldwide.
           </p>
 
           <div className="hero-buttons">
-            <Link to="/contact" className="btn-primary">
+            <Link to="/ContactUs" className="btn-primary">
               Start Project
             </Link>
 
-            <Link to="/services" className="btn-secondary">
+            <Link to="/Services" className="btn-secondary">
               Explore Services
             </Link>
           </div>
@@ -88,8 +99,8 @@ export default function HomePage() {
             </div>
 
             <div className="mini-card">
-              <h4>SEO</h4>
-              <p>Optimized Solutions</p>
+              <h4>FAST</h4>
+              <p>High Performance Delivery</p>
             </div>
 
             <div className="mini-card">
@@ -102,10 +113,7 @@ export default function HomePage() {
         <div className="hero-image">
           <div className="image-glow"></div>
 
-          <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
-            alt="Software Development Company"
-          />
+          <img src={homeMainBanner} alt="Software Development Company" />
         </div>
       </section>
 
@@ -126,11 +134,11 @@ export default function HomePage() {
         <div className="section-heading">
           <span>OUR SERVICES</span>
 
-          <h2>Innovative IT Solutions For Modern Businesses</h2>
+          <h2>Building simple and smart digital systems</h2>
 
           <p>
-            We provide complete software and digital transformation services
-            designed to help businesses scale faster.
+            We deliver end-to-end software and digital transformation solutions
+            that help businesses scale faster.
           </p>
         </div>
 
@@ -153,10 +161,7 @@ export default function HomePage() {
 
       <section className="about-section">
         <div className="about-image">
-          <img
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
-            alt="IT Company Team"
-          />
+          <img src={homeAboutImage} alt="IT Company Team" />
         </div>
 
         <div className="about-content">
@@ -187,11 +192,13 @@ export default function HomePage() {
         <div className="section-heading">
           <span>TRUSTED CLIENTS</span>
 
-          <h2>Companies That Trust Us</h2>
+          <h2>Our Valued Partners</h2>
 
           <p>
-            We proudly collaborate with innovative startups, enterprises, and
-            technology companies worldwide.
+            We work with leading technology partners to deliver secure, stable,
+            and scalable mission critical systems. Built on trust and technical
+            excellence, we ensure reliable solutions that support business
+            continuity and long-term growth.
           </p>
         </div>
 
@@ -222,7 +229,7 @@ export default function HomePage() {
             Let's create something innovative together with modern technology.
           </p>
 
-          <Link to="/contact" className="cta-btn">
+          <Link to="/ContactUs" className="cta-btn">
             Get Free Consultation
           </Link>
         </div>
