@@ -1,52 +1,58 @@
 import { Link } from "react-router-dom";
 import "../../css/Our_Services.css";
+import servicesBanner from "../../assets/Our_services_banner.png";
 import {
-    FaGlobe,
-    FaMobileAlt,
-    FaCloud,
-    FaPalette,
-    FaCogs,
-    FaLock,
-  } from "react-icons/fa";
-export default function ServicesPage() {
-  
+  FaGlobe,
+  FaMobileAlt,
+  FaCloud,
+  FaPalette,
+  FaCogs,
+  FaLock,
+} from "react-icons/fa";
+import webDevelopmentImg from "../../assets/our_services_webdevelopment.png";
+import mobileDevelopmentImg from "../../assets/our_services_mobiledevelopment.png";
+import cloudSolution from "../../assets/our_servicesc_cloudsoution.png"
+import uiuxImage from "../../assets/our_services_UIUX.png";
+import customSoftware from "../../assets/our_services_customedevelopment.png"
+import cyberSecurity from "../../assets/our_services_cybersecurity.png"
 
+export default function ServicesPage() {
   const services = [
     {
       icon: <FaGlobe />,
       title: "Web Development",
       desc: "High-performance, SEO optimized modern websites for all industries.",
-      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      img: webDevelopmentImg,
     },
     {
       icon: <FaMobileAlt />,
       title: "Mobile App Development",
       desc: "Android & iOS apps with smooth UI/UX and real-world performance.",
-      img: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
+      img: mobileDevelopmentImg,
     },
     {
       icon: <FaCloud />,
       title: "Cloud Solutions",
       desc: "Secure, scalable cloud systems for modern businesses.",
-      img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+      img: cloudSolution,
     },
     {
       icon: <FaPalette />,
       title: "UI/UX Design",
       desc: "Creative designs focused on user engagement and conversion.",
-      img: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+      img: uiuxImage,
     },
     {
       icon: <FaCogs />,
       title: "Custom Software",
       desc: "Business automation software tailored to your workflow.",
-      img: "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+      img:customSoftware,
     },
     {
       icon: <FaLock />,
       title: "Cyber Security",
       desc: "Advanced protection for your digital systems and data.",
-      img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
+      img: cyberSecurity,
     },
   ];
 
@@ -67,10 +73,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="banner-image  gsap-reveal zoom">
-          <img
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
-            alt="Team Work"
-          />
+          <img src={servicesBanner} alt="Team Work" />
         </div>
       </section>
 
