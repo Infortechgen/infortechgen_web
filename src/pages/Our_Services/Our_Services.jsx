@@ -67,7 +67,7 @@ export default function ServicesPage() {
             enterprises grow faster, smarter, and stronger in the digital world.
           </p>
 
-          <Link to="/contact" className="banner-btn  reveal reveal-zoom">
+          <Link to="/ContactUs" className="banner-btn  reveal reveal-zoom">
             Get Free Consultation
           </Link>
         </div>

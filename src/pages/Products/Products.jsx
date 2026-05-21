@@ -5,7 +5,7 @@ import "../../css/Products.css";
 import products from "../../assets/productData.json";
 import leadme from "../../assets/MyLeads.png";
 import infocloud from "../../assets/InfoCloudLogo.png";
-
+import our_product_cover_image from "../../assets/our_product_cover_image.png";
 export default function ProductsPage() {
   const logoMap = {
     leadme,
@@ -13,8 +13,8 @@ export default function ProductsPage() {
   };
   return (
     <div className="products-page">
-      <section className="products-hero reveal">
-        <div className="hero-content">
+      <section className="products-hero">
+        <div className="products-hero-content">
           <span className="hero-tag">OUR DIGITAL PRODUCTS</span>
           <h1>
             Smart Software Products
@@ -25,7 +25,7 @@ export default function ProductsPage() {
             workflows, improve productivity, and scale faster.
           </p>
           <div className="hero-buttons">
-            <Link to="/contact" className="hero-btn">
+            <Link to="/ContactUs" className="hero-btn">
               Get Consultation
             </Link>
             <Link to="/services" className="hero-btn-outline">
@@ -36,7 +36,7 @@ export default function ProductsPage() {
 
         <div className="hero-image reveal-right">
           <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+            src={our_product_cover_image}
             alt="Products"
           />
         </div>
@@ -51,8 +51,11 @@ export default function ProductsPage() {
           <h2>Powerful Solutions Built For Growth</h2>
 
           <p>
-            Modern software systems designed for startups, enterprises, and
-            digital businesses.
+            Infortechgen delivers modern software solutions for startups,
+            enterprises, and digital businesses. We build scalable, innovative,
+            and high-performance systems tailored to business growth.
+            Transforming ideas into powerful digital experiences with
+            cutting-edge technology.
           </p>
         </div>
 
@@ -71,11 +74,11 @@ export default function ProductsPage() {
                 <p>{product.description}</p>
 
                 <div className="product-buttons">
-                  <Link to="/contact" className="product-btn">
+                  <Link to="/ContactUs" className="product-btn">
                     Book Demo
                   </Link>
 
-                  <Link to="/contact" className="product-btn-outline">
+                  <Link to="/ContactUs" className="product-btn-outline">
                     Learn More
                   </Link>
                 </div>

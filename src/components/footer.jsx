@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../css/Footer.css";
 import logo from "../assets/Infortechgen_Logo.jpg";
 
@@ -20,27 +21,27 @@ export default function Footer() {
         {/* COMPANY */}
         <div className="footer-col">
           <h4>COMPANY</h4>
-          <a href="Aboutus">About Us</a>
-          <a href="Aboutus">Our services</a>
-          <a href="ProductsPage">Our products</a>
-          <a href="ContactUs"> Contact Us</a>
+          <Link to="/Aboutus">About Us</Link>
+          <Link to="/Services">Our services</Link>
+          <Link to="/ProductsPage">Our products</Link>
+          <Link to="/ContactUs">Contact Us</Link>
         </div>
 
         {/* SERVICES */}
         <div className="footer-col">
           <h4>SERVICES</h4>
-          <a href="ContactUs">Web Development</a>
-          <a href="ContactUs">Mobile Apps</a>
-          <a href="ContactUs">AI & ML</a>
-          <a href="ContactUs">Cloud & DevOps</a>
+          <Link to="/Services">Web Development</Link>
+          <Link to="/Services">Mobile Apps</Link>
+          <Link to="/Services">AI & ML</Link>
+          <Link to="/Services">Cloud & DevOps</Link>
         </div>
 
         {/* PRODUCTS */}
         <div className="footer-col">
           <h4>PRODUCTS</h4>
-          <a href="/">MY Leads</a>
-          <a href="/">InforCloud</a>
-          <a href="/">InforPos</a>
+          <Link to="/ProductsPage">leadMe</Link>
+          <Link to="/ProductsPage">InforCloud</Link>
+          <Link to="/ProductsPage">InforPos</Link>
         </div>
       </div>
 

@@ -1,127 +1,210 @@
 /* ─────────────────────────────
-   BASE HEADER
+   ULTRA-MODERN TECH HEADER
 ───────────────────────────── */
 
 .header {
-  height: 70px;
-  background: white;
+  height: 68px;
+  /* Premium frosted acrylic glass effect */
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 40px;
-  margin: 10px 20px;
+  padding: 0 32px;
+  margin: 16px 24px;
 
-  border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  /* Fully rounded pill shape header */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  /* Deep, elegant web shadow */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03),
+    0 1px 3px rgba(0, 0, 0, 0.02);
 
   position: sticky;
-  top: 10px;
+  top: 16px;
   z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Logo */
+/* Logo Animation */
 .logo img {
-  height: 40px;
+  height: 38px;
+  object-fit: contain;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.logo img:hover {
+  transform: scale(1.05) rotate(-1deg);
 }
 
 /* NAV DESKTOP */
 .nav {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 8px;
+  /* Tighter gap for capsule style menu items */
 }
 
 .nav a {
   text-decoration: none;
-  color: #374151;
+  color: #4b5563;
+  /* Refined modern slate */
   font-weight: 500;
-  transition: 0.3s;
+  font-size: 0.92rem;
+  letter-spacing: -0.01em;
+  padding: 8px 16px;
+  border-radius: 30px;
+  /* Capsule shape links */
+  position: relative;
+  transition: all 0.25s ease;
 }
 
-.nav a:hover {
-  color: #2563eb;
-}
-
-/* Contact Button */
-.contact-btn {
-  padding: 10px 16px;
-  background: #2563eb;
-  color: white !important;
-  border-radius: 10px;
+/* Hover background capsule effect */
+.nav a:not(.contact-btn):hover {
+  color: #111827;
+  background: rgba(0, 0, 0, 0.04);
 }
 
 /* ─────────────────────────────
-   HAMBURGER ICON
+   MODERN "CONTACT US" BUTTON STYLE
 ───────────────────────────── */
+.contact-btn {
+  background: #0f172a;
+  /* Sleek dark slate/black background */
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  padding: 10px 24px !important;
+  border-radius: 30px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
 
+.contact-btn:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.25);
+  letter-spacing: 0.02em;
+  /* Micro stretching effect */
+}
+
+.contact-btn:active {
+  transform: translateY(0);
+}
+
+/* ─────────────────────────────
+   DYNAMIC HAMBURGER ICON
+───────────────────────────── */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  padding: 6px;
+  z-index: 1001;
 }
 
 .hamburger span {
-  width: 25px;
-  height: 3px;
+  width: 22px;
+  height: 2px;
   background: #0f172a;
-  border-radius: 5px;
-  transition: 0.3s;
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center;
+}
+
+/* Minimalist morph to X */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* ─────────────────────────────
-   MOBILE / TABLET MENU
+   MOBILE / TABLET MENU 
 ───────────────────────────── */
-
 @media (max-width: 768px) {
-
   .hamburger {
     display: flex;
   }
 
   .nav {
     position: absolute;
-    top: 80px;
-    left: 10px;
-    right: 10px;
+    top: 76px;
+    left: 0;
+    right: 0;
 
-    background: white;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(20px);
+
     flex-direction: column;
-    gap: 15px;
-
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    gap: 12px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-10px) scale(0.98);
     pointer-events: none;
-    transition: 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .nav.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
     pointer-events: auto;
   }
 
   .nav a {
-    padding: 10px;
     width: 100%;
     text-align: center;
+    padding: 12px;
   }
 
   .contact-btn {
     width: 100%;
-    text-align: center;
+    box-sizing: border-box;
   }
 }
 
-/* SMALL MOBILE */
 @media (max-width: 480px) {
   .header {
-    margin: 8px;
-    padding: 0 16px;
+    margin: 12px 16px;
+    padding: 0 20px;
   }
+}
+
+/* ─────────────────────────────
+   ACTIVE / SELECTED PAGE STYLES
+───────────────────────────── */
+
+/* Active style for links: turning into an elegant modern yellow capsule token */
+.nav a.active-page:not(.contact-btn) {
+  color: #854d0e;
+  /* Dark elegant yellow text for premium readability */
+  background: #fef08a;
+  /* Soft, modern pastel yellow capsule background */
+  font-weight: 600;
+}
+
+/* Contact route active configuration */
+.nav a.contact-btn.active-page {
+  background: #eab308;
+  /* Vibrantly lit solid modern yellow */
+  color: #000000 !important;
+  /* Contrasting dark text */
+  border-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 18px rgba(234, 179, 8, 0.35);
 }

@@ -3,14 +3,14 @@
     "id": 1,
     "name": "Lead me",
     "headline": "All Your Leads. One App.",
-    "description": "Manage the entire lead lifecycle...",
+    "description": "LeadMe is a smart lead management mobile application designed to manage real-time leads, client appointments, and customer interactions efficiently. Track latest and upcoming releases, organize client activities, and streamline your sales workflow in one powerful platform. Built for modern businesses to improve productivity, responsiveness, and customer relationship management.",
     "logo": "leadme"
   },
   {
     "id": 2,
     "name": "InfoCloud",
     "headline": "Upload Smart, Stay Secure",
-    "description": "Document management system...",
+    "description": "InforCloud is a secure document upload and management mobile application designed to support a completely paperless workflow. Easily upload, organize, and access important documents anytime, improving efficiency and digital collaboration. Built to simplify document handling for modern businesses with fast, secure, and smart cloud-based management.",
     "logo": "infocloud"
   }
 ]

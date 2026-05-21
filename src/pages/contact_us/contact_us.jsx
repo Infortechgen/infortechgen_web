@@ -31,9 +31,8 @@ export default function Contact() {
 
         <div className="overlay"></div>
 
-        <div className="hero-content">
+        <div className="hero-contact-content">
           <h1>Contact Infortechgen</h1>
-          <p>Let’s build something amazing together with modern technology</p>
         </div>
       </section>
 
@@ -61,7 +60,11 @@ export default function Contact() {
       {/* ================= CONTACT FORM ================= */}
       <section className="contact-form-section">
         <h2>Send Message</h2>
-
+        <p>
+          Get in touch with us to transform your ideas into powerful digital
+          solutions with modern technology. Let’s collaborate and build
+          innovative experiences that drive your business forward.
+        </p>
         <form className="contact-form">
           <input
             type="text"
@@ -76,7 +79,12 @@ export default function Contact() {
             placeholder="Your Email"
             onChange={handleChange}
           />
-
+          <input
+            type="tel"
+            name="mobile"
+            placeholder="Your Mobile Number"
+            onChange={handleChange}
+          />
           <textarea
             name="message"
             placeholder="Your Message"

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../css/Header.css";
 import logo from "../assets/Infortechgen_Logo.jpg";
 
@@ -9,33 +9,47 @@ export default function Header() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
+  const checkActive = ({ isActive }) => (isActive ? "active-page" : "");
+
   return (
     <header className="header">
-      
       {/* Logo */}
       <div className="logo">
         <img src={logo} alt="Infortechgen Logo" />
       </div>
 
-      {/* Hamburger */}
-      <div className="hamburger" onClick={toggleMenu}>
+      {/* Hamburger Menu Toggle Icon */}
+      <div className={`hamburger ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      {/* Navigation */}
+      {/* Modern Navigation Menu */}
       <nav className={`nav ${menuOpen ? "active" : ""}`}>
-        <Link to="/" onClick={closeMenu}>Home</Link>
-        <Link to="/Aboutus" onClick={closeMenu}>About</Link>
-        <Link to="/Services" onClick={closeMenu}>Our services</Link>
-        <Link to="/ProductsPage" onClick={closeMenu}>Our products</Link>
+        <NavLink to="/" className={checkActive} onClick={closeMenu}>
+          Home
+        </NavLink>
+        <NavLink to="/Aboutus" className={checkActive} onClick={closeMenu}>
+          About
+        </NavLink>
+        <NavLink to="/Services" className={checkActive} onClick={closeMenu}>
+          Our services
+        </NavLink>
+        <NavLink to="/ProductsPage" className={checkActive} onClick={closeMenu}>
+          Our products
+        </NavLink>
 
-        <Link to="/ContactUs" className="contact-btn" onClick={closeMenu}>
+        <NavLink
+          to="/ContactUs"
+          className={({ isActive }) =>
+            `contact-btn ${isActive ? "active-page" : ""}`
+          }
+          onClick={closeMenu}
+        >
           Contact Us
-        </Link>
+        </NavLink>
       </nav>
-
     </header>
   );
 }
