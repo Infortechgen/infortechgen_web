@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../../css/About_us.css";
 import { FaRocket, FaHandshake, FaBolt, FaLock } from "react-icons/fa";
-
+import StatsBar from "../../components/StatsBar";
 export default function AboutPage() {
   const skills = [
     "Web Development",
@@ -152,27 +152,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <section className="about-stats">
-          <div className="about-stat-card">
-            <h2>10+</h2>
-            <p>Completed Projects</p>
-          </div>
-
-          <div className="about-stat-card">
-            <h2>10+</h2>
-            <p>Happy Clients</p>
-          </div>
-
-          <div className="about-stat-card">
-            <h2>5+</h2>
-            <p>Years Experience</p>
-          </div>
-
-          <div className="about-stat-card">
-            <h2>24/7</h2>
-            <p>Technical Support</p>
-          </div>
-        </section>
+           <StatsBar />
       </section>
 
       {/* ================= CTA ================= */}

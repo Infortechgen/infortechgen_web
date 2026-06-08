@@ -7,6 +7,8 @@ import hoombarlogo from "../../assets/hoombar_logo.webp";
 import inforFurnitureicon from "../../assets/inforfurnitureLogo.png";
 import homeMainBanner from "../../assets/home_banner.jpg";
 import homeAboutImage from "../../assets/home_about_image.jpg";
+import StatsBar from "../../components/StatsBar";
+
 import {
   FaGlobe,
   FaMobileAlt,
@@ -17,12 +19,7 @@ import {
 } from "react-icons/fa";
 
 export default function HomePage() {
-  const stats = [
-    { num: "10+", label: "Projects Completed" },
-    { num: "10+", label: "Happy Clients" },
-    { num: "5+", label: "Years Experience" },
-    { num: "24/7", label: "Technical Support" },
-  ];
+  
 
   const services = [
     {
@@ -119,14 +116,7 @@ export default function HomePage() {
 
       {/* ================= STATS ================= */}
 
-      <section className="stats-bar">
-        {stats.map((item, index) => (
-          <div className="stat-item" key={index}>
-            <h2>{item.num}</h2>
-            <p>{item.label}</p>
-          </div>
-        ))}
-      </section>
+      <StatsBar />
 
       {/* ================= SERVICES ================= */}
 
